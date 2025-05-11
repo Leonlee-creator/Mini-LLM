@@ -5,16 +5,16 @@ from torch.nn import functional as F
 
 # Hyperparameters
 batch_size = 8
-block_size = 128 
+block_size = 128
 max_iters = 10000
 eval_interval = 100
 learning_rate = 1e-3
 device = 'cuda' if torch.cuda.is_available() else 'cpu'
 
 
-with open("train.txt", "r") as f:
+with open('train.txt', 'r', encoding='utf-8') as f:
     train_text = f.read()
-with open("val.txt", "r") as f:
+with open("val.txt", "r", encoding='utf-8') as f:
     val_text = f.read()
 
 
