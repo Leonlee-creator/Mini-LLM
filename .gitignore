@@ -1,0 +1,8 @@
+@"
+turbo_models/  # Excludes all model checkpoints
+.cache/
+__pycache__/
+*.bin
+*.pth
+*.h5
+"@ | Out-File -Encoding utf8 .gitignore
